@@ -1,0 +1,36 @@
+/* Example userChrome.css file */
+
+/* Import your desired components first */
+
+/* @import url("chrome/autohide_bookmarks_toolbar.css"); */
+@import url("chrome/autohide_bookmarks_and_main_toolbars.css");
+@import url("chrome/centered_tab_label.css");
+@import url("chrome/privatemode_indicator_as_menu_button.css");
+@import url("chrome/tab_close_button_always_on_hover.css");
+@import url("chrome/tab_line_loading_indicator.css");
+@import url("chrome/tab_separator_lines.css");
+@import url("chrome/tabs_fill_available_width.css");
+@import url("chrome/urlbar_centered_text.css");
+@import url("chrome/urlbar_container_color_border.css");
+
+/* @import url("chrome/selected_tab_as_urlbar.css"); currently unresponsive to click */
+
+/* Apply your custom modifications after imports */
+
+#alltabs-button {
+    display: none !important;
+}
+
+#navigator-toolbox{
+    --uc-autohide-toolbar-delay: 150ms; /* The toolbar is hidden after 0.15s */
+}
+
+/* Color private browsing window */
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar {
+    background-color: #25003E !important;
+    -moz-appearance: none !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] .tabbrowser-tab:not([selected]) .tab-content{
+    color: white !important;
+}

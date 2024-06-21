@@ -15,13 +15,15 @@ To use these custom CSS settings:
 1. **Move to your Firefox profile directory:**
    Search `about:profiles` in your Firefox and check 'Root Directory' for your profile location.
    Go into the 'chrome' directory, creating one if it doesn't exist.
-3. **Clone the repository:**
+2. **Clone the repository:**
    ```bash
    git clone https://github.com/aaajhs/firefox-css.git
    ```
-4. **Apply CSS Settings:**
+3. **Apply CSS Settings:**
    For the theme to be applied, you should see a userChrome.css file in the 'chrome' folder.
    The master branch does NOT have a default userChrome.css file. See 'Themes' section below.
+4. **Restart Firefox:**
+   For the change to take effect, Firefox must be restarted completely.
 
 ### Themes
 

@@ -17,7 +17,7 @@ To use these custom CSS settings:
    Go into the 'chrome' directory, creating one if it doesn't exist.
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/aaajhs/firefox-css.git
+   git clone https://github.com/aaajhs/firefox-css.git .
    ```
 3. **Apply CSS Settings:**
    For the theme to be applied, you should see a userChrome.css file in the 'chrome' folder.
